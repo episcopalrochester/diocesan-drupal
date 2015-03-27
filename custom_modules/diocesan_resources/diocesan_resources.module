@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Diocesan Resources feature.
+ */
+
+include_once 'diocesan_resources.features.inc';
