@@ -1,0 +1,10 @@
+name = EDOR Cycle
+description = Provides cycle2 jQuery plugin
+core = 7.x
+package = EDOR
+version = 7.x-1.0
+
+scripts[] = cycle/jquery.cycle2.min.js
+scripts[] = edor_cycle.js
+
+stylesheets[all][] = edor_cycle.css

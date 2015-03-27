@@ -1,0 +1,27 @@
+.views-cycle .views-row img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.views-cycle .views-field-title {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  background: #000;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.views-cycle .views-field-edit-node {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.views-cycle .views-field-title a {
+  color: #fff;
+  font-size: 36px;
+  font-family: EB Garamond;
+}
