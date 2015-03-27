@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Diocesan Budget feature.
+ */
+
+include_once 'diocesan_budget.features.inc';

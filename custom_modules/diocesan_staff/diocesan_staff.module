@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Diocesan Staff feature.
+ */
+
+include_once 'diocesan_staff.features.inc';
