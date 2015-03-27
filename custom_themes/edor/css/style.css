@@ -1,0 +1,193 @@
+/**
+ * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
+ * remove this comment and start adding your styles to this file.
+ */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.warning {
+  background: yellow;
+}
+
+td .tabledrag-changed {
+  display: none;
+}
+
+.draggable a.tabledrag-handle {
+  height: 1.3em;
+}
+
+.front .page-header {
+  display: none;
+}
+
+.branding {
+  padding: 25px 0px;
+}
+
+.branding .logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+.node p, .node div {
+  font-size: 17px;
+  line-height: 34px;
+}
+
+.branding a {
+  font-family: 'EB Garamond' !important;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.branding .site-name a {
+  font-size: 26px;
+  line-height: 32px;
+  color: #000;
+}
+
+.branding .slogan {
+  font-style: italic;
+  font-family: 'EB Garamond' !important;
+  font-size: 15px;
+}
+
+.page-node .node .col-sm-4 img,
+.page-node .node .col-sm-5 img,
+.view-highlights img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.view-highlights {
+  padding: 20px 0px;
+}
+
+.view-highlights h2 {
+}
+
+.nopadding {
+  padding: 0px 10px 0px 0px;
+  margin: 0px;
+}
+
+/* MegaMenu */
+
+.tb-megamenu {
+  background-color: #fff;
+  border-top: 1px #e7e7e7 solid; 
+  border-bottom: 1px #e7e7e7 solid; 
+  margin: 0px 0px 20px 0px;
+}
+
+.tb-megamenu a {
+  color: #000 !important;
+  font-family: 'EB Garamond' !important;
+  font-weight: normal !important;
+  font-size: 16px;
+}
+
+.tb-megamenu .nav > li > a {
+  padding: 5px 20px;
+  background: url("../dot.png") no-repeat center right !important;
+}
+
+.tb-megamenu .nav > li:last-child > a {
+  background: none !important;
+}
+
+.tb-megamenu .nav > .active > a, .tb-megamenu .nav > .active > a:hover, .tb-megamenu .nav > .active > a:focus {
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+.tb-megamenu .nav > li > a {
+  border-right: 0px;
+}
+
+.tb-megamenu .mega-nav .mega-group > .mega-group-title, .tb-megamenu .dropdown-menu .mega-nav .mega-group > .mega-group-title, .tb-megamenu .dropdown-menu .active .mega-nav .mega-group > .mega-group-title {
+  font-size: 20px;
+}
+
+.tb-megamenu .mega-nav > li > a, .tb-megamenu .dropdown-menu .mega-nav > li > a {
+  padding: 8px;
+}
+
+.tb-megamenu .dropdown-menu .active > a, .tb-megamenu .dropdown-menu .active > a:hover {
+
+}
+
+.tb-megamenu .mega-caption {
+  color: #666;
+  font-size: 14px;
+}
+
+.tb-megamenu .dropdown-menu .active > a, .tb-megamenu .dropdown-menu .active > a:hover {
+  background: #99ddf3 !important;
+}
+
+.tb-megamenu .dropdown-menu li > a {
+  border-top: 0px;
+}
+
+/* staff */
+
+.view-staff .views-field-field-image {
+  max-width: 20%;
+  width: 20%;
+  height: auto;
+}
+
+.view-staff .views-field-field-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.view-staff h3 {
+  margin-top: 0px;
+}
+
+.view-staff caption {
+  border: 1px #e1e1e1 solid;
+  text-align: left;
+  background: #e7e7e7;
+  font-size: 24px;
+  margin: 0px 0px 8px 0px;
+  font-weight: 900;
+  padding: 4px 8px;
+}
+
+.view-staff tr:first-child td {
+  border: 0px;
+}
+
+.view-staff .table>tbody>tr>td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* convention */
+
+.view-convention-updates td.views-field-field-image-teaser {
+  width: 20%;
+}
+
+.view-convention-updates h2,
+.view-convention-updates td.views-field-field-image-teaser img {
+  margin-top: 12px;
+}
+
+.view-convention-updates td.views-field-field-image-teaser img {
+  margin-bottom: 12px;
+}
+
+.convention-budget {
+  margin-top: 15px;
+  border-top: 1px #e7e7e7 solid;
+}
