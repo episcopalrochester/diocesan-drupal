@@ -135,6 +135,34 @@ td .tabledrag-changed {
   border-top: 0px;
 }
 
+
+.tb-megamenu .btn-navbar,
+.tb-megamenu .btn-navbar:hover, .tb-megamenu .btn-navbar:focus, .tb-megamenu .btn-navbar:active, .tb-megamenu .btn-navbar.active, .tb-megamenu .btn-navbar.disabled, .tb-megamenu .btn-navbar[disabled] {
+  color: #000;
+}
+
+@media (max-width: 979px) {
+.tb-megamenu .nav-collapse {
+  border: 1px #000 solid;
+}
+
+.tb-megamenu .nav-collapse .dropdown-menu,
+.tb-megamenu .nav-collapse {
+  background: #eee;
+}
+.tb-megamenu .nav-collapse .dropdown-menu a {
+  border-top: 0px;
+}
+.tb-megamenu .nav-collapse .nav > li > a {
+  border-bottom: 0px;
+  border-top: 1px solid #222;
+  font-size: 28px;
+}
+.tb-megamenu .nav > li > a {
+  background: none !important;
+}
+}
+
 /* staff */
 
 .view-staff .views-field-field-image {
