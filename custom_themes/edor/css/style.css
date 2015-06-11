@@ -3,6 +3,11 @@
  * remove this comment and start adding your styles to this file.
  */
 
+body {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -77,11 +82,11 @@ td .tabledrag-changed {
 }
 
 /* MegaMenu */
-
 .tb-megamenu {
   background-color: #fff;
-  border-top: 1px #e7e7e7 solid; 
-  border-bottom: 1px #e7e7e7 solid; 
+  border-top: 1px #f3f3f3 solid; 
+  border-bottom: 1px #f3f3f3 solid; 
+  border-right: 1px #f3f3f3 solid; 
   margin: 0px 0px 20px 0px;
 }
 
@@ -94,7 +99,9 @@ td .tabledrag-changed {
 
 .tb-megamenu .nav > li > a {
   padding: 5px 20px;
-  background: url("../dot.png") no-repeat center right !important;
+/*  background: url("../dot.png") no-repeat center right !important; */
+  border-left: 1px #f3f3f3 solid;
+  border-right: 0px;
 }
 
 .tb-megamenu .nav > li:last-child > a {
@@ -104,10 +111,6 @@ td .tabledrag-changed {
 .tb-megamenu .nav > .active > a, .tb-megamenu .nav > .active > a:hover, .tb-megamenu .nav > .active > a:focus {
   background-color: #fff;
   text-decoration: underline;
-}
-
-.tb-megamenu .nav > li > a {
-  border-right: 0px;
 }
 
 .tb-megamenu .mega-nav .mega-group > .mega-group-title, .tb-megamenu .dropdown-menu .mega-nav .mega-group > .mega-group-title, .tb-megamenu .dropdown-menu .active .mega-nav .mega-group > .mega-group-title {
@@ -141,9 +144,50 @@ td .tabledrag-changed {
   color: #000;
 }
 
+.tb-megamenu .nav > li:last-child > a:hover,
+.tb-megamenu li >  a:hover {
+  color: #fff !important;
+  background-color: #4dc6f3 !important;
+  border-color: #f3f3f3;
+}
+
+.tb-megamenu .nav li.dropdown.active > .dropdown-toggle, .tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle {
+  background: none;
+  border-color: #f3f3f3;
+}
+
+.tb-megamenu .level-3 .dropdown-menu {
+  display: none;
+}
+
+@media (min-width: 980px) {
+  .tb-megamenu .nav > li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+    text-align: center;
+  }
+    .tb-megamenu .nav > li > a {
+      padding: 5px 0px;
+    }
+    .tb-megamenu .nav > li li {
+      display: inherit;
+      width: inherit;
+      text-align: left !important;
+    }
+}
+
+
+
 @media (max-width: 979px) {
-.tb-megamenu .nav-collapse {
-  border: 1px #000 solid;
+  .tb-megamenu .nav-collapse {
+}
+.tb-megamenu .btn-navbar {
+  width: 100%;
+}
+
+.tb-megamenu {
+  border: 0px;
 }
 
 .tb-megamenu .nav-collapse .dropdown-menu,
@@ -218,4 +262,58 @@ td .tabledrag-changed {
 .convention-budget {
   margin-top: 15px;
   border-top: 1px #e7e7e7 solid;
+}
+
+/* writings */
+
+.view-writings tr.views-row-first td {
+  border-top: 0px;
+}
+
+.views-writings h2 a, .view-writings h2 {
+  margin-top: 0px;
+}
+
+.view-writings .views-field-field-image {
+  max-width: 20%;
+  width: 20%;
+  height: auto;
+}
+
+.view-writings .views-field-field-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.view-writings .table>tbody>tr>td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* news */
+
+.view-news tr.views-row-first td {
+  border-top: 0px;
+}
+
+.views-news h2 a, .view-news h2 {
+  margin-top: 0px;
+}
+
+.view-news .views-field-field-image {
+  max-width: 20%;
+  width: 20%;
+  height: auto;
+}
+
+.view-news .views-field-field-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.view-news .table>tbody>tr>td {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }

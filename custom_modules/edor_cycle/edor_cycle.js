@@ -1,9 +1,12 @@
 var $ = jQuery;
 
 $(document).ready(function() {
+    $('.views-cycle').removeClass('no-js');
     $('.views-cycle').show();
     $('div.views-cycle .view-content').cycle({
             speed: 1200,
+            pager: '.carousel-pager',
+            pauseOnHover: true,
                 manualSpeed: 100,
                 slides: "> div.views-row"
                 });

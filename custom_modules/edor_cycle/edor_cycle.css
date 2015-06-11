@@ -4,7 +4,7 @@
   height: auto;
 }
 
-.views-cycle .views-field-title {
+.views-cycle .views-field-views-conditional {
   position: absolute;
   bottom: 0;
   padding: 20px;
@@ -20,8 +20,55 @@
   z-index: 1000;
 }
 
-.views-cycle .views-field-title a {
+.views-cycle .views-field-views-conditional a {
   color: #fff;
   font-size: 36px;
   font-family: EB Garamond;
+}
+
+.views-cycle.no-js .views-row {
+  display: none;
+}
+
+.views-cycle.no-js .views-row.views-row-1 {
+  display: inherit;
+}
+
+.views-cycle.no-js .views-field-title {
+  position: relative;
+  margin-top: -90px;
+}
+
+.views-cycle.no-js .views-field-edit-node {
+  position: relative;
+  float: right;
+  margin-top: -25px;
+}
+
+/* pager */
+.carousel-pager { 
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: -32px;
+  height: 32px;
+  padding-top: 16px;
+  position: relative;
+  z-index: 500;
+}
+.carousel-pager span { 
+  font-family: arial;
+  font-size: 50px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  display: inline-block;
+  color: #ddd;
+  cursor: pointer;
+}
+        
+.carousel-pager span.cycle-pager-active {
+  color: #22A0D3;
+}
+.carousel-pager > * { cursor: pointer;
 }
