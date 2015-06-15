@@ -13,6 +13,12 @@ img {
   height: auto;
 }
 
+h2 {
+  padding-bottom: 9px;
+  margin: 20px 0 10px;
+  border-bottom: 1px solid #eee;
+}
+
 .warning {
   background: yellow;
 }
@@ -115,6 +121,8 @@ td .tabledrag-changed {
 
 .tb-megamenu .mega-nav .mega-group > .mega-group-title, .tb-megamenu .dropdown-menu .mega-nav .mega-group > .mega-group-title, .tb-megamenu .dropdown-menu .active .mega-nav .mega-group > .mega-group-title {
   font-size: 20px;
+  color: #22A0D3 !important;
+  background: none !important;
 }
 
 .tb-megamenu .mega-nav > li > a, .tb-megamenu .dropdown-menu .mega-nav > li > a {
@@ -270,6 +278,7 @@ td .tabledrag-changed {
   border-top: 0px;
 }
 
+.views-writings h3 a, .view-writings h3,
 .views-writings h2 a, .view-writings h2 {
   margin-top: 0px;
 }
@@ -297,6 +306,7 @@ td .tabledrag-changed {
   border-top: 0px;
 }
 
+.view-news h3 a, .view-news h3,
 .views-news h2 a, .view-news h2 {
   margin-top: 0px;
 }

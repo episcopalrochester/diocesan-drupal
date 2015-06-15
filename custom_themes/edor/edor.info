@@ -19,6 +19,8 @@ regions[footer]         = 'Footer'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
 regions[front]          = "Front Page"
+regions[front_bottom_left]          = "Front Page - Bottom Left"
+regions[front_bottom_right]          = "Front Page - Bottom Right"
 
 
 ;;;;;;;;;;;;;;;;;;;;;
