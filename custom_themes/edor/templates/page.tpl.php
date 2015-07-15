@@ -143,6 +143,14 @@
       <?php endif; ?>
       <?php if (drupal_is_front_page() && !empty($page['content'])): ?>
           <?php print render($page['front']); ?>
+<div class="row">
+<div class="col-sm-6">
+          <?php print render($page['front_bottom_left']); ?>
+</div>
+<div class="col-sm-6">
+          <?php print render($page['front_bottom_right']); ?>
+</div>
+</div>
       <?php else: ?>
           <?php print render($page['content']); ?>
       <?php endif; ?>

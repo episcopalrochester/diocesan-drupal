@@ -82,6 +82,8 @@
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
+  <p><em><?php $created = new DateTime($date);
+           print date_format($created,'F j, Y'); ?></em></p>
   <?php print $user_picture; ?>
 
   <?php print render($title_prefix); ?>
@@ -108,5 +110,4 @@
   <?php print render($content['links']); ?>
 
   <?php print render($content['comments']); ?>
-
 </div>
