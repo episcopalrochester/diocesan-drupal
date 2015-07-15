@@ -4,7 +4,7 @@
   height: auto;
 }
 
-.views-cycle .views-field-views-conditional {
+.views-cycle .views-field-title {
   position: absolute;
   bottom: 0;
   padding: 20px;
@@ -20,7 +20,7 @@
   z-index: 1000;
 }
 
-.views-cycle .views-field-views-conditional a {
+.views-cycle .views-field-title a {
   color: #fff;
   font-size: 36px;
   font-family: EB Garamond;
@@ -71,4 +71,43 @@
   color: #22A0D3;
 }
 .carousel-pager > * { cursor: pointer;
+}
+
+@media (max-width: 979px) {
+
+.views-cycle .views-field-title {
+  position: static;
+  bottom: 0;
+  padding: 20px;
+  background: #000;
+  width: 100%;
+  background: rgba(0,0,0,1.0);
+}
+
+.views-cycle .views-field-edit-node {
+  position: static;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.carousel-pager { 
+  margin-bottom: 0px;
+  height: 64px;
+  padding-top: 16px;
+  position: static;
+  background: black;
+}
+
+.carousel-pager span {
+  font-size: 100px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+}
+
+.views-cycle .views-field-title a {
+  font-size: 22px;
+}
+
 }

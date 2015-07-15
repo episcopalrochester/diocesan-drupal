@@ -327,3 +327,15 @@ td .tabledrag-changed {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+/* node add */
+
+.node-type-list dt {
+  font-size: 1.2em;
+}
+
+.node-type-list dd {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px #eee solid;
+}
