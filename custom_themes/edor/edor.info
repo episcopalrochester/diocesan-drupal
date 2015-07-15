@@ -26,6 +26,7 @@ regions[front]          = "Front Page"
 ;;;;;;;;;;;;;;;;;;;;;
 
 stylesheets[all][] = css/style.css
+stylesheets[print][] = css/print.css
 
 
 ; For information on choosing the desired method, please read the Drupal
