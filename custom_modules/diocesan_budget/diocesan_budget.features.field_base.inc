@@ -10,7 +10,7 @@
 function diocesan_budget_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_budget_status'
+  // Exported field_base: 'field_budget_status'.
   $field_bases['field_budget_status'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -36,7 +36,7 @@ function diocesan_budget_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_draft'
+  // Exported field_base: 'field_draft'.
   $field_bases['field_draft'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -57,7 +57,7 @@ function diocesan_budget_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_files'
+  // Exported field_base: 'field_files'.
   $field_bases['field_files'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -80,7 +80,7 @@ function diocesan_budget_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_letters'
+  // Exported field_base: 'field_letters'.
   $field_bases['field_letters'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -96,13 +96,21 @@ function diocesan_budget_field_default_field_bases() {
     'module' => 'node_reference',
     'settings' => array(
       'referenceable_types' => array(
+        'bishop_s_writings' => 0,
         'budget' => 0,
+        'convention' => 0,
+        'convention_update' => 'convention_update',
         'front_page_highlights' => 0,
         'leadership_group' => 0,
+        'leadership_minutes' => 0,
+        'news' => 0,
         'page' => 'page',
+        'parish' => 0,
+        'prayer_request' => 0,
         'resource_list' => 0,
         'slide' => 0,
         'staff_profile' => 0,
+        'webform' => 0,
       ),
       'view' => array(
         'args' => array(),
@@ -114,7 +122,7 @@ function diocesan_budget_field_default_field_bases() {
     'type' => 'node_reference',
   );
 
-  // Exported field_base: 'field_year'
+  // Exported field_base: 'field_year'.
   $field_bases['field_year'] = array(
     'active' => 1,
     'cardinality' => 1,

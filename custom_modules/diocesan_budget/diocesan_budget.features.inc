@@ -28,7 +28,7 @@ function diocesan_budget_node_info() {
     'budget' => array(
       'name' => t('Budget Draft'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Post a new budget draft (by year)'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
