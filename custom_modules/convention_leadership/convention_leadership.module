@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Convention & Leadership feature.
+ */
+
+include_once 'convention_leadership.features.inc';
