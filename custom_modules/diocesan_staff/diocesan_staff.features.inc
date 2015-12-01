@@ -28,7 +28,7 @@ function diocesan_staff_node_info() {
     'staff_profile' => array(
       'name' => t('Staff Profile'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Add a staff profile to the staff page.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

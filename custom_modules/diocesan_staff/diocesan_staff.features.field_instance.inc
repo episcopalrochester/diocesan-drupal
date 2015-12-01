@@ -10,7 +10,7 @@
 function diocesan_staff_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-staff_profile-body'
+  // Exported field_instance: 'node-staff_profile-body'.
   $field_instances['node-staff_profile-body'] = array(
     'bundle' => 'staff_profile',
     'default_value' => NULL,
@@ -54,7 +54,7 @@ function diocesan_staff_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-staff_profile-field_contact_information'
+  // Exported field_instance: 'node-staff_profile-field_contact_information'.
   $field_instances['node-staff_profile-field_contact_information'] = array(
     'bundle' => 'staff_profile',
     'default_value' => NULL,
@@ -94,7 +94,7 @@ function diocesan_staff_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-staff_profile-field_department'
+  // Exported field_instance: 'node-staff_profile-field_department'.
   $field_instances['node-staff_profile-field_department'] = array(
     'bundle' => 'staff_profile',
     'default_value' => NULL,
@@ -118,7 +118,7 @@ function diocesan_staff_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_department',
     'label' => 'Department',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -133,7 +133,7 @@ function diocesan_staff_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-staff_profile-field_image'
+  // Exported field_instance: 'node-staff_profile-field_image'.
   $field_instances['node-staff_profile-field_image'] = array(
     'bundle' => 'staff_profile',
     'deleted' => 0,
@@ -175,6 +175,20 @@ function diocesan_staff_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
+        'filefield_sources' => array(
+          'filefield_sources' => array(),
+          'source_attach' => array(
+            'absolute' => 0,
+            'attach_mode' => 'move',
+            'path' => 'file_attach',
+          ),
+          'source_imce' => array(
+            'imce_mode' => 0,
+          ),
+          'source_reference' => array(
+            'autocomplete' => 0,
+          ),
+        ),
         'insert' => 0,
         'insert_absolute' => 0,
         'insert_class' => '',
@@ -199,7 +213,7 @@ function diocesan_staff_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-staff_profile-field_role'
+  // Exported field_instance: 'node-staff_profile-field_role'.
   $field_instances['node-staff_profile-field_role'] = array(
     'bundle' => 'staff_profile',
     'default_value' => NULL,
