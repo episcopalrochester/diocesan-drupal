@@ -4,7 +4,9 @@ core = 7.x
 package = EDOR
 version = 7.x-1.0
 
+; Include jQuery Cycle Plugin, for the front page carousel.
 scripts[] = cycle/jquery.cycle2.min.js
 scripts[] = edor_cycle.js
 
+; Include custom CSS for the front page carousel
 stylesheets[all][] = edor_cycle.css

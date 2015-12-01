@@ -1,6 +1,7 @@
 var $ = jQuery;
 
 $(document).ready(function() {
+    // Invoke cycle on our view
     $('.views-cycle').removeClass('no-js');
     $('.views-cycle').show();
     $('div.views-cycle .view-content').cycle({
@@ -10,7 +11,6 @@ $(document).ready(function() {
                 manualSpeed: 100,
                 slides: "> div.views-row"
                 });
-   // $('.views-cycle .slide-text-container-inner').append('<div class="slide-controls"><a href="#" class="slide-prev">Prev</a><a href="#" class="slide-next">Next</a>');
     if ($("#slide_table")) {
     updateSlideControl();
     $('#edit-slideshow-count').change(function() {
@@ -27,7 +27,7 @@ $(document).ready(function() {
       });
     }
     });
-
+// Function that manipulates the controls according to changes
 function updateSlideControl() {
   count = 1;
   var slide_max = $('#edit-slideshow-count').val();
