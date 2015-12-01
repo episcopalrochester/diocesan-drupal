@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Database Sync feature.
+ */
+
+include_once 'database_sync.features.inc';
