@@ -8,6 +8,10 @@ body {
   line-height: 24px;
 }
 
+hr {
+  clear: both;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -88,7 +92,7 @@ td .tabledrag-changed {
 }
 
 /* MegaMenu */
-.tb-megamenu {
+.tb-megamenu, .tb-megamenu.style-blue {
   background-color: #fff;
   border-top: 1px #f3f3f3 solid; 
   border-bottom: 1px #f3f3f3 solid; 
@@ -103,7 +107,8 @@ td .tabledrag-changed {
   font-size: 16px;
 }
 
-.tb-megamenu .nav > li > a {
+.tb-megamenu .nav > li > a,
+.tb-megamenu.style-blue .nav > li > a {
   padding: 5px 20px;
 /*  background: url("../dot.png") no-repeat center right !important; */
   border-left: 1px #f3f3f3 solid;
@@ -113,6 +118,7 @@ td .tabledrag-changed {
 .tb-megamenu .nav > li:last-child > a {
   background: none !important;
 }
+
 
 .tb-megamenu .nav > .active > a, .tb-megamenu .nav > .active > a:hover, .tb-megamenu .nav > .active > a:focus {
   background-color: #fff;
@@ -338,4 +344,12 @@ td .tabledrag-changed {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px #eee solid;
+}
+
+/* webform */
+
+.form-item.webform-component {
+  padding-bottom: 8px !important;
+  margin-bottom: 8px;
+  border-bottom: 1px #ededed solid;
 }

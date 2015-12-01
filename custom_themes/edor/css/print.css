@@ -1,3 +1,13 @@
 .region-navigation {
   display: none;
 }
+
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
+
+footer {
+  display: none;
+}
