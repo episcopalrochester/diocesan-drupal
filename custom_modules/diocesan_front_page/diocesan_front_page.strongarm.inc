@@ -38,6 +38,9 @@ function diocesan_front_page_strongarm() {
         'title' => array(
           'weight' => '0',
         ),
+        'path' => array(
+          'weight' => '3',
+        ),
       ),
       'display' => array(),
     ),

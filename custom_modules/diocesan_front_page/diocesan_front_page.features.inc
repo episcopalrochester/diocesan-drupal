@@ -28,7 +28,7 @@ function diocesan_front_page_node_info() {
     'front_page_highlights' => array(
       'name' => t('Front Page Highlights'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Add a highlight to the middle of the front page'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
