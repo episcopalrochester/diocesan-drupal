@@ -28,7 +28,7 @@ function diocesan_resources_node_info() {
     'resource_list' => array(
       'name' => t('Resource List'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Add a resource list to the parish resoures/forms section.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

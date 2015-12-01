@@ -10,7 +10,7 @@
 function diocesan_resources_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-resource_list-body'
+  // Exported field_instance: 'node-resource_list-body'.
   $field_instances['node-resource_list-body'] = array(
     'bundle' => 'resource_list',
     'default_value' => NULL,
@@ -54,7 +54,7 @@ function diocesan_resources_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-resource_list-field_files'
+  // Exported field_instance: 'node-resource_list-field_files'.
   $field_instances['node-resource_list-field_files'] = array(
     'bundle' => 'resource_list',
     'deleted' => 0,
@@ -82,6 +82,26 @@ function diocesan_resources_field_default_field_instances() {
       'active' => 1,
       'module' => 'file',
       'settings' => array(
+        'filefield_sources' => array(
+          'filefield_sources' => array(
+            'attach' => 0,
+            'clipboard' => 0,
+            'reference' => 0,
+            'remote' => 'remote',
+            'upload' => 'upload',
+          ),
+          'source_attach' => array(
+            'absolute' => 0,
+            'attach_mode' => 'move',
+            'path' => 'file_attach',
+          ),
+          'source_imce' => array(
+            'imce_mode' => 0,
+          ),
+          'source_reference' => array(
+            'autocomplete' => 0,
+          ),
+        ),
         'insert' => 1,
         'insert_absolute' => 0,
         'insert_class' => '',
