@@ -114,14 +114,6 @@ function diocesan_staff_views_default_views() {
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  /* Field: Content: Link */
-  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
-  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['label'] = '';
-  $handler->display->display_options['fields']['view_node']['element_type'] = 'p';
-  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['text'] = 'Read more...';
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -139,6 +131,15 @@ function diocesan_staff_views_default_views() {
   $handler->display->display_options['fields']['field_department']['element_type'] = 'h2';
   $handler->display->display_options['fields']['field_department']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_department']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Draggableviews: Content */
+  $handler->display->display_options['fields']['draggableviews']['id'] = 'draggableviews';
+  $handler->display->display_options['fields']['draggableviews']['table'] = 'node';
+  $handler->display->display_options['fields']['draggableviews']['field'] = 'draggableviews';
+  $handler->display->display_options['fields']['draggableviews']['label'] = '';
+  $handler->display->display_options['fields']['draggableviews']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['draggableviews']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['draggableviews']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['draggableviews']['draggableviews']['ajax'] = 0;
   /* Sort criterion: Taxonomy term: Weight */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
   $handler->display->display_options['sorts']['weight']['table'] = 'taxonomy_term_data';
@@ -246,62 +247,6 @@ function diocesan_staff_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['path'] = 'staff';
-
-  /* Display: Admin */
-  $handler = $view->new_display('page', 'Admin', 'page_1');
-  $handler->display->display_options['defaults']['access'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['access']['perm'] = 'edit any staff_profile content';
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Featured Image */
-  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
-  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
-  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
-  $handler->display->display_options['fields']['field_image']['label'] = '';
-  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_image']['settings'] = array(
-    'image_style' => 'medium',
-    'image_link' => '',
-  );
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Department */
-  $handler->display->display_options['fields']['field_department']['id'] = 'field_department';
-  $handler->display->display_options['fields']['field_department']['table'] = 'field_data_field_department';
-  $handler->display->display_options['fields']['field_department']['field'] = 'field_department';
-  $handler->display->display_options['fields']['field_department']['label'] = '';
-  $handler->display->display_options['fields']['field_department']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_department']['element_type'] = 'h2';
-  $handler->display->display_options['fields']['field_department']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_department']['type'] = 'taxonomy_term_reference_plain';
-  /* Field: Draggableviews: Content */
-  $handler->display->display_options['fields']['draggableviews']['id'] = 'draggableviews';
-  $handler->display->display_options['fields']['draggableviews']['table'] = 'node';
-  $handler->display->display_options['fields']['draggableviews']['field'] = 'draggableviews';
-  $handler->display->display_options['fields']['draggableviews']['label'] = '';
-  $handler->display->display_options['fields']['draggableviews']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['draggableviews']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['draggableviews']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['draggableviews']['draggableviews']['save_button_label'] = 'Save Order';
-  $handler->display->display_options['fields']['draggableviews']['draggableviews']['ajax'] = 0;
-  $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Draggableviews: Weight */
-  $handler->display->display_options['sorts']['weight_1']['id'] = 'weight_1';
-  $handler->display->display_options['sorts']['weight_1']['table'] = 'draggableviews_structure';
-  $handler->display->display_options['sorts']['weight_1']['field'] = 'weight';
-  $handler->display->display_options['sorts']['weight_1']['draggableviews_setting_view'] = 'staff:page_1';
-  $handler->display->display_options['sorts']['weight_1']['draggableviews_setting_new_items_bottom_list'] = 1;
-  $handler->display->display_options['path'] = 'admin/content/staff';
-  $handler->display->display_options['menu']['type'] = 'tab';
-  $handler->display->display_options['menu']['title'] = 'Staff';
-  $handler->display->display_options['menu']['weight'] = '0';
-  $handler->display->display_options['menu']['context'] = 0;
-  $handler->display->display_options['menu']['context_only_inline'] = 0;
 
   /* Display: Staff Argument Block */
   $handler = $view->new_display('block', 'Staff Argument Block', 'block_1');

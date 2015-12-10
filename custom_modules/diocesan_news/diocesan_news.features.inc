@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * diocesan_budget.features.inc
+ * diocesan_news.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function diocesan_budget_ctools_plugin_api($module = NULL, $api = NULL) {
+function diocesan_news_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -16,19 +16,19 @@ function diocesan_budget_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_views_api().
  */
-function diocesan_budget_views_api($module = NULL, $api = NULL) {
+function diocesan_news_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
 
 /**
  * Implements hook_node_info().
  */
-function diocesan_budget_node_info() {
+function diocesan_news_node_info() {
   $items = array(
-    'budget' => array(
-      'name' => t('Budget Draft'),
+    'news' => array(
+      'name' => t('News'),
       'base' => 'node_content',
-      'description' => t('Post a new budget draft (by year)'),
+      'description' => t('Add a news article to the site (front page and news section)'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

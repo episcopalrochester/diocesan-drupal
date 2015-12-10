@@ -44,6 +44,19 @@ function diocesan_budget_views_default_views() {
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Letters */
+  $handler->display->display_options['fields']['field_letters']['id'] = 'field_letters';
+  $handler->display->display_options['fields']['field_letters']['table'] = 'field_data_field_letters';
+  $handler->display->display_options['fields']['field_letters']['field'] = 'field_letters';
+  $handler->display->display_options['fields']['field_letters']['element_label_type'] = 'h3';
+  $handler->display->display_options['fields']['field_letters']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_letters']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_letters']['type'] = 'node_reference_node';
+  $handler->display->display_options['fields']['field_letters']['settings'] = array(
+    'node_reference_view_mode' => 'teaser',
+  );
+  $handler->display->display_options['fields']['field_letters']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_letters']['separator'] = '<br />';
   /* Field: Content: Status */
   $handler->display->display_options['fields']['field_budget_status']['id'] = 'field_budget_status';
   $handler->display->display_options['fields']['field_budget_status']['table'] = 'field_data_field_budget_status';
@@ -51,24 +64,6 @@ function diocesan_budget_views_default_views() {
   $handler->display->display_options['fields']['field_budget_status']['label'] = '';
   $handler->display->display_options['fields']['field_budget_status']['element_type'] = 'em';
   $handler->display->display_options['fields']['field_budget_status']['element_label_colon'] = FALSE;
-  /* Field: Content: Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  /* Field: Content: Letters */
-  $handler->display->display_options['fields']['field_letters']['id'] = 'field_letters';
-  $handler->display->display_options['fields']['field_letters']['table'] = 'field_data_field_letters';
-  $handler->display->display_options['fields']['field_letters']['field'] = 'field_letters';
-  $handler->display->display_options['fields']['field_letters']['element_label_type'] = 'h3';
-  $handler->display->display_options['fields']['field_letters']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_letters']['type'] = 'node_reference_node';
-  $handler->display->display_options['fields']['field_letters']['settings'] = array(
-    'node_reference_view_mode' => 'teaser',
-  );
-  $handler->display->display_options['fields']['field_letters']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_letters']['separator'] = '<br />';
   /* Field: Content: Files */
   $handler->display->display_options['fields']['field_files']['id'] = 'field_files';
   $handler->display->display_options['fields']['field_files']['table'] = 'field_data_field_files';
@@ -78,6 +73,12 @@ function diocesan_budget_views_default_views() {
   $handler->display->display_options['fields']['field_files']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_files']['type'] = 'file_table';
   $handler->display->display_options['fields']['field_files']['delta_offset'] = '0';
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';

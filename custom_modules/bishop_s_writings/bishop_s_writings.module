@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Bishop's Writings feature.
+ */
+
+include_once 'bishop_s_writings.features.inc';

@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * diocesan_budget.features.inc
+ * bishop_s_writings.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function diocesan_budget_ctools_plugin_api($module = NULL, $api = NULL) {
+function bishop_s_writings_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -16,19 +16,19 @@ function diocesan_budget_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_views_api().
  */
-function diocesan_budget_views_api($module = NULL, $api = NULL) {
+function bishop_s_writings_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
 
 /**
  * Implements hook_node_info().
  */
-function diocesan_budget_node_info() {
+function bishop_s_writings_node_info() {
   $items = array(
-    'budget' => array(
-      'name' => t('Budget Draft'),
+    'bishop_s_writings' => array(
+      'name' => t('Bishop\'s Writings'),
       'base' => 'node_content',
-      'description' => t('Post a new budget draft (by year)'),
+      'description' => t('Add a post to the "Bishop\'s Writings" section of the website.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

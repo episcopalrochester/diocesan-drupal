@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Diocesan News feature.
+ */
+
+include_once 'diocesan_news.features.inc';

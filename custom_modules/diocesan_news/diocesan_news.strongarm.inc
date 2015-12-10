@@ -1,19 +1,19 @@
 <?php
 /**
  * @file
- * diocesan_budget.strongarm.inc
+ * diocesan_news.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function diocesan_budget_strongarm() {
+function diocesan_news_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__budget';
+  $strongarm->name = 'field_bundle_settings_node__news';
   $strongarm->value = array(
     'view_modes' => array(
       'teaser' => array(
@@ -32,13 +32,16 @@ function diocesan_budget_strongarm() {
         'custom_settings' => FALSE,
       ),
       'one_column' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'two_column_7_5' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'revision' => array(
         'custom_settings' => FALSE,
+      ),
+      'no_feature_image' => array(
+        'custom_settings' => TRUE,
       ),
     ),
     'extra_fields' => array(
@@ -50,52 +53,50 @@ function diocesan_budget_strongarm() {
           'weight' => '1',
         ),
         'locations' => array(
-          'weight' => '8',
+          'weight' => '6',
         ),
       ),
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_node__budget'] = $strongarm;
+  $export['field_bundle_settings_node__news'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_budget';
-  $strongarm->value = array(
-    0 => 'main-menu',
-  );
-  $export['menu_options_budget'] = $strongarm;
+  $strongarm->name = 'menu_options_news';
+  $strongarm->value = array();
+  $export['menu_options_news'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_budget';
+  $strongarm->name = 'menu_parent_news';
   $strongarm->value = 'main-menu:0';
-  $export['menu_parent_budget'] = $strongarm;
+  $export['menu_parent_news'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_budget';
+  $strongarm->name = 'node_options_news';
   $strongarm->value = array(
     0 => 'status',
   );
-  $export['node_options_budget'] = $strongarm;
+  $export['node_options_news'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_budget';
+  $strongarm->name = 'node_preview_news';
   $strongarm->value = '1';
-  $export['node_preview_budget'] = $strongarm;
+  $export['node_preview_news'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_budget';
+  $strongarm->name = 'node_submitted_news';
   $strongarm->value = 0;
-  $export['node_submitted_budget'] = $strongarm;
+  $export['node_submitted_news'] = $strongarm;
 
   return $export;
 }

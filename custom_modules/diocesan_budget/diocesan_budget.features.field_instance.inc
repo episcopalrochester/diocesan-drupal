@@ -10,7 +10,7 @@
 function diocesan_budget_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-budget-body'
+  // Exported field_instance: 'node-budget-body'.
   $field_instances['node-budget-body'] = array(
     'bundle' => 'budget',
     'default_value' => NULL,
@@ -22,7 +22,7 @@ function diocesan_budget_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -51,11 +51,11 @@ function diocesan_budget_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 5,
+      'weight' => 7,
     ),
   );
 
-  // Exported field_instance: 'node-budget-field_budget_status'
+  // Exported field_instance: 'node-budget-field_budget_status'.
   $field_instances['node-budget-field_budget_status'] = array(
     'bundle' => 'budget',
     'default_value' => NULL,
@@ -63,11 +63,11 @@ function diocesan_budget_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 5,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -94,7 +94,7 @@ function diocesan_budget_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-budget-field_draft'
+  // Exported field_instance: 'node-budget-field_draft'.
   $field_instances['node-budget-field_draft'] = array(
     'bundle' => 'budget',
     'default_value' => NULL,
@@ -103,10 +103,9 @@ function diocesan_budget_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 4,
+        'type' => 'hidden',
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -134,7 +133,7 @@ function diocesan_budget_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-budget-field_files'
+  // Exported field_instance: 'node-budget-field_files'.
   $field_instances['node-budget-field_files'] = array(
     'bundle' => 'budget',
     'deleted' => 0,
@@ -145,7 +144,7 @@ function diocesan_budget_field_default_field_instances() {
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -169,6 +168,26 @@ function diocesan_budget_field_default_field_instances() {
       'active' => 1,
       'module' => 'file',
       'settings' => array(
+        'filefield_sources' => array(
+          'filefield_sources' => array(
+            'attach' => 0,
+            'clipboard' => 0,
+            'reference' => 0,
+            'remote' => 'remote',
+            'upload' => 'upload',
+          ),
+          'source_attach' => array(
+            'absolute' => 0,
+            'attach_mode' => 'move',
+            'path' => 'file_attach',
+          ),
+          'source_imce' => array(
+            'imce_mode' => 0,
+          ),
+          'source_reference' => array(
+            'autocomplete' => 0,
+          ),
+        ),
         'insert' => 0,
         'insert_absolute' => 0,
         'insert_class' => '',
@@ -189,11 +208,11 @@ function diocesan_budget_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
-  // Exported field_instance: 'node-budget-field_letters'
+  // Exported field_instance: 'node-budget-field_letters'.
   $field_instances['node-budget-field_letters'] = array(
     'bundle' => 'budget',
     'default_value' => NULL,
@@ -203,9 +222,11 @@ function diocesan_budget_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'node_reference',
-        'settings' => array(),
-        'type' => 'node_reference_default',
-        'weight' => 2,
+        'settings' => array(
+          'node_reference_view_mode' => 'teaser',
+        ),
+        'type' => 'node_reference_node',
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -230,11 +251,11 @@ function diocesan_budget_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'node_reference_autocomplete',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
-  // Exported field_instance: 'node-budget-field_year'
+  // Exported field_instance: 'node-budget-field_year'.
   $field_instances['node-budget-field_year'] = array(
     'bundle' => 'budget',
     'default_value' => NULL,
@@ -242,11 +263,10 @@ function diocesan_budget_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'text',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 3,
+        'type' => 'hidden',
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
