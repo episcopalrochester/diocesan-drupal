@@ -1,0 +1,6 @@
+name = EDOR Data Import
+description = Helps import data from database site
+core = 7.x
+package = EDOR
+version = 7.x-1.0
+
