@@ -1,4 +1,5 @@
 <?php
+  // Embed the budget view into this template
   $budget = strip_tags(render($items[0]));
   if (!empty($budget)): ?>
 <div class="convention-budget">
